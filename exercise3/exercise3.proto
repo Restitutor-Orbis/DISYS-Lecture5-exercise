@@ -1,0 +1,11 @@
+service TimeHandler {
+    rpc GetTime(TimeRequest) returns (TimeReply) {}
+}
+
+message TimeRequest {
+    required string request = 1;
+}
+
+message TimeReply {
+    required string time = 1;
+}
